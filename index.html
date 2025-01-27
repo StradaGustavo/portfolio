@@ -312,26 +312,25 @@
      <section class="contact" id="contact">
         <h2>Contact <span>Me!</span></h2>
 
-        <form class="form" target="_blank" action="https://formsubmit.co/gss.stradagustavo@gmail.com" method="POST">
-            <div class="input-box">
-                <input name="fullname" type="text" placeholder="Full Name" required>
-                <input name="email" type="email" placeholder="E-mail" required>
-            </div>
-            
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://stradagustavo.github.io/portfolio/thanks">
-
-
-            <div class="input-box">
-                <input name="phone" type="text" placeholder="Phone Number" required>
-                <input name="subject" type="text" placeholder="Subject" required>
-            </div>
+    <form class="form" target="_blank" action="https://formsubmit.co/gss.stradagustavo@gmail.com" method="POST">
+        <div class="input-box">
+            <input name="fullname" type="text" placeholder="Full Name" required>
+            <input name="email" type="email" placeholder="E-mail" required>
+        </div>
+        
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Remova o _next para testar -->
+        <input type="hidden" name="_next" value="https://stradagustavo.github.io/portfolio/thanks">
     
-            <textarea name="message" cols="30" rows="8" placeholder="Message" required></textarea>
+        <div class="input-box">
+            <input name="phone" type="text" placeholder="Phone Number" required>
+            <input name="subject" type="text" placeholder="Subject" required>
+        </div>
     
-            <div ><button type="submit" class="btn-message">Send Message</button></div>
-        </form>
-
+        <textarea name="message" cols="30" rows="8" placeholder="Message" required></textarea>
+    
+        <div><button type="submit" class="btn-message">Send Message</button></div>
+    </form>
      </section>
     <!-- === /contact section === -->
 
