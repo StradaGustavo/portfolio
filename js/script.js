@@ -1,5 +1,13 @@
 // Menu function //
 
+document.addEventListener('DOMContentLoaded', () => {
+  const homeLink = document.querySelector('.nav a[href="#home"]');
+  const homeLinkResponsive = document.querySelector('.nav-responsive a[href="#home"]');
+  
+  if (homeLink) homeLink.classList.add('active');
+  if (homeLinkResponsive) homeLinkResponsive.classList.add('active');
+});
+
 const menuLinks = document.querySelectorAll('.nav a');
 const menuLink = document.querySelectorAll('.nav-responsive a');
 const sections = document.querySelectorAll('section');
