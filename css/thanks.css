@@ -194,8 +194,6 @@ span{
 
 /* === /Menssage==== */
 
-
-
 /* === Footer === */
 
 .social-midias-footer{
@@ -254,11 +252,23 @@ footer{
 
 /* === /Footer === */
 
-
 /* === Media queries ==== */
 
 /* Extra Small Smartphone */
 @media (min-width: 0px){
+	.menssage {
+		position: relative;
+		margin-top: 12%;
+		right: 16%;
+		width: 110%;
+		height: 30vh;
+	  }
+
+	.menssage h3{
+		font-size: 30px;
+		padding-top: 9%;
+	}
+
 	.menu-mobile{
 		display: block;
 	}
@@ -277,18 +287,39 @@ footer{
 
 /* Small Smartphone */
 @media (min-width: 576px){
+	.menssage {
+		margin: 12% 0 0 16%;
+		width: 100%;
+		height: 30vh;
+	  }
 
+	.menssage h3{
+		font-size: 30px;
+		padding-top: 9%;
+	}
+	
 }
 /* /Small Smartphone */
 
 /* Medium Tablet */
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 722px){
+	.menssage{
+		width: 100%;
+		margin: 12% 0 0 16%;
+		height: 30vh;
+	}
 
 }
 /* /Medium Tablet */
 
 /* Large Laptop */
 @media (min-width: 992px){
+	.menssage{
+		width: 70%;
+		margin: 12% 0 0 29%;
+		height: 30vh;
+	}
+
 	.menu-mobile{
 		display: none;
 	}
@@ -301,5 +332,17 @@ footer{
 	}
 }
 /* /Large Laptop */
+
+
+/* Extra Large Desktop */
+@media (min-width: 1200px){
+	.menssage{
+		margin: 9%;
+		margin: 8% 0 0 29%;
+		width: 70%;
+		height: 40vh;
+	}
+}
+/* /Extra Large Desktop */
 
 /* === /Media queries ==== */
