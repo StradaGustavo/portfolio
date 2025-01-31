@@ -258,10 +258,10 @@ footer{
 @media (min-width: 0px){
 	.menssage {
 		position: relative;
-		margin-top: 12%;
-		right: 16%;
-		width: 110%;
-		height: 30vh;
+		margin-top: 25%;
+		right: 36%;
+		width: 150%;
+		height: 25vh;
 	  }
 
 	.menssage h3{
@@ -286,11 +286,11 @@ footer{
 /* /Extra Small Smartphone */
 
 /* Small Smartphone */
-@media (min-width: 576px){
+@media (min-width: 463px){
 	.menssage {
-		margin: 12% 0 0 16%;
-		width: 100%;
-		height: 30vh;
+		margin: 25% 0 0 13%;
+		width: 140%;
+		height: 25vh;
 	  }
 
 	.menssage h3{
@@ -302,22 +302,43 @@ footer{
 /* /Small Smartphone */
 
 /* Medium Tablet */
-@media (min-width: 768px) and (max-width: 722px){
+
+@media (min-width: 540px){
 	.menssage{
-		width: 100%;
-		margin: 12% 0 0 16%;
-		height: 30vh;
+		width: 130%;
+		margin: 25% 0 0 18%;
+		height: 25vh;
 	}
 
 }
+
+@media (min-width: 660px) {
+	.menssage{
+		width: 110%;
+		margin: 20% 0 0 29%;
+		height: 25vh;
+	}
+
+}
+
+@media (min-width: 773px) {
+	.menssage{
+		width: 95%;
+		margin: 20%  0 0 36%;
+		height: 25vh;
+	}
+
+}
+
 /* /Medium Tablet */
 
+
 /* Large Laptop */
-@media (min-width: 992px){
+@media (min-width: 900px){
 	.menssage{
-		width: 70%;
-		margin: 12% 0 0 29%;
-		height: 30vh;
+		width: 80%;
+		margin: 13% 0 0 43%;
+		height: 25vh;
 	}
 
 	.menu-mobile{
@@ -333,16 +354,25 @@ footer{
 }
 /* /Large Laptop */
 
-
 /* Extra Large Desktop */
 @media (min-width: 1200px){
 	.menssage{
 		margin: 9%;
-		margin: 8% 0 0 29%;
+		margin: 9% 0 0 50%;
 		width: 70%;
 		height: 40vh;
 	}
 }
+
+@media (min-width: 1600px){
+	.menssage{
+		margin: 9%;
+		margin: 10% 0 0 52%;
+		width: 70%;
+		height: 40vh;
+	}
+}
+
 /* /Extra Large Desktop */
 
 /* === /Media queries ==== */
