@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Gustavo's Portfolio</title>
+    <!-- === Box icons === -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./favicons/Logo.ico" type="image/x-icon">
+    <!-- === /Box icons === -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/Gustavo Strada_logo.png" alt="Gustavo Strada" class="logo-img">
+        </a>
+
+        <div class="nav">
+            <a href="#home"       data-i18n="nav-home">Home</a>
+            <a href="#education"  data-i18n="nav-education">Education</a>
+            <a href="#experience" data-i18n="nav-experience">Experience</a>
+            <a href="#services"   data-i18n="nav-services">Services</a>
+            <a href="#portifolio" data-i18n="nav-portfolio">Portfolio</a>
+        </div>
+
+        <div class="nav-responsive">
+            <a href="#home"       data-i18n="nav-home">Home</a>
+            <a href="#education"  data-i18n="nav-education">Education</a>
+            <a href="#experience" data-i18n="nav-experience">Experience</a>
+            <a href="#services"   data-i18n="nav-services">Services</a>
+            <a href="#portifolio" data-i18n="nav-portfolio">Portfolio</a>
+        </div>
+
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="setLang('en')">EN</button>
+            <button class="lang-btn" onclick="setLang('pt')">PT-BR</button>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <!-- === home section === -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3><span class="greeting-text" data-i18n="home-greeting">Hi, It's</span> <span class="name-highlight">Gustavo</span></h3>
+            <h1 class="text-animation"><span class="iam-text" data-i18n="home-iam">I'm a</span>&nbsp;<span class="animated-role"></span></h1>
+
+            <p data-i18n="home-bio">
+                Full Stack Developer with a degree in Systems Analysis and Development,
+                experienced in building web and mobile applications focused on delivering
+                efficient, responsive, and well-structured solutions. Skilled in JavaScript,
+                HTML5, CSS3, PHP, and MySQL, with experience in API integration, database
+                modeling, and improving operational processes supported by data and controls.
+                Also experienced in UX/UI Design and Social Media, creating user-centered
+                interfaces and managing digital content and brand presence.
+            </p>
+
+            <div class="social-midias">
+                <a href="https://www.linkedin.com/in/gustavo-strada-002a3b3a6/" target="_blank" data-tooltip="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/StradaGustavo?tab=overview&from=2025-01-01&to=2025-01-08" target="_blank" data-tooltip="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="cv/gustavo-strada-cv.pdf" download data-tooltip="Download CV" data-i18n-tooltip="tooltip-cv"><i class='bx bx-download'></i></a>
+            </div>
+            <div class="clear"></div>
+            <div><a href="https://api.whatsapp.com/send?phone=5511952288784&text=Ol%C3%A1%20Gustavo,%20tudo%20bem?%20Vim%20pelo%20seu%20portfolio.%0AGostaria%20de%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="btn-hire" target="_blank" data-i18n="btn-hire">Hire me</a></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/image-with-background.png" alt="Profile picture">
+        </div>
+    </section>
+    <!-- === /home section === -->
+
+    <!-- === education section === -->
+    <section class="education" id="education">
+        <h2 class="heading"><span class="heading-prefix" data-i18n="section-my-edu">My</span> <span data-i18n="section-educations">Education</span></h2>
+
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+
+            <!-- Item 1: LEFT -->
+            <div class="tl-item tl-left">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-book-open'></i> <span data-i18n="edu1-badge">Feb 2021 – Jul 2023</span></span>
+                    <p class="tl-org" data-i18n="edu1-org">Universidade Nove de Julho</p>
+                    <h3 data-i18n="edu1-title">Systems Analysis and Development</h3>
+                    <p class="tl-desc" data-i18n="edu1-desc">Coursework focused on front-end and back-end development, programming logic, databases, software engineering, computer architecture, and information security fundamentals.</p>
+                </div>
+            </div>
+
+            <!-- Item 2: RIGHT -->
+            <div class="tl-item tl-right">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-globe'></i> <span data-i18n="edu2-badge">2025 – Currently</span></span>
+                    <p class="tl-org" data-i18n="edu2-org">Language Course</p>
+                    <h3 data-i18n="edu2-title">English – Advanced</h3>
+                    <p class="tl-desc" data-i18n="edu2-desc">Currently improving English skills with a focus on conversation, aiming to strengthen communication in web and mobile development environments.</p>
+                </div>
+            </div>
+
+            <!-- Item 3: LEFT -->
+            <div class="tl-item tl-left">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-trending-up'></i> <span data-i18n="edu3-badge">Aug 2026 – Currently</span></span>
+                    <p class="tl-org" data-i18n="edu3-org">Universidade Nove de Julho (UNINOVE)</p>
+                    <h3 data-i18n="edu3-title">Marketing</h3>
+                    <p class="tl-desc" data-i18n="edu3-desc">Started in August 2026, expanding my profile beyond technology with a focus on marketing, branding, and digital communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === /education section === -->
+
+    <!-- === experience section === -->
+    <section class="experience" id="experience">
+        <h2 class="heading"><span class="heading-prefix" data-i18n="section-my-exp">My</span> <span data-i18n="section-experiences">Experience</span></h2>
+
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+
+            <!-- Item 1: LEFT -->
+            <div class="tl-item tl-left">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-code-alt'></i> <span data-i18n="exp1-badge">Aug 2023 – Jan 2025</span></span>
+                    <p class="tl-org" data-i18n="exp1-org">Developer in Training</p>
+                    <h3 data-i18n="exp1-title">Academic Projects &amp; Independent Development</h3>
+                    <div class="tl-tags">
+                        <span><i class='bx bxl-javascript'></i> JavaScript</span>
+                        <span><i class='bx bxl-html5'></i> HTML5</span>
+                        <span><i class='bx bxl-css3'></i> CSS3</span>
+                        <span><i class='bx bxl-php'></i> PHP</span>
+                        <span><i class='bx bx-data'></i> MySQL</span>
+                        <span><i class='bx bxl-git'></i> Git</span>
+                        <span><i class='bx bxl-github'></i> GitHub</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li data-i18n="exp1-li1">Developed practical projects to strengthen skills in front-end, back-end, and database development.</li>
+                        <li data-i18n="exp1-li2">Built web pages and applications focusing on structure, responsiveness, and MySQL integration.</li>
+                        <li data-i18n="exp1-li3">Applied version control practices, programming logic, and project organization techniques.</li>
+                        <li data-i18n="exp1-li4">Continuously improved technical skills in web technologies and software development fundamentals.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 2: RIGHT -->
+            <div class="tl-item tl-right">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-briefcase'></i> <span data-i18n="exp2-badge">Feb 2025 – Jan 2026</span></span>
+                    <p class="tl-org" data-i18n="exp2-org">Full Stack Developer · Early Technical Leadership</p>
+                    <h3 data-i18n="exp2-title">AprendiInvest</h3>
+                    <div class="tl-tags">
+                        <span><i class='bx bxl-javascript'></i> JavaScript</span>
+                        <span><i class='bx bxl-html5'></i> HTML5</span>
+                        <span><i class='bx bxl-css3'></i> CSS3</span>
+                        <span><i class='bx bxl-php'></i> PHP</span>
+                        <span><i class='bx bx-data'></i> MySQL</span>
+                        <span><i class='bx bx-link'></i> APIs</span>
+                        <span><i class='bx bx-mobile'></i> PWA</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li data-i18n="exp2-li1">Contributed to the application from concept to implementation, defining both visual and technical structure.</li>
+                        <li data-i18n="exp2-li2">Built the front-end using a mobile-first approach, focusing on responsiveness, performance, and UX.</li>
+                        <li data-i18n="exp2-li3">Developed the back-end in PHP, integrating APIs related to the financial market.</li>
+                        <li data-i18n="exp2-li4">Designed and implemented the core database structure with a focus on organization and scalability.</li>
+                        <li data-i18n="exp2-li5">Supported technical leadership in daily project activities, including task organization and delivery validation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 3: LEFT -->
+            <div class="tl-item tl-left">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-pen'></i> <span data-i18n="exp3-badge">Jan 2025 – Currently</span></span>
+                    <p class="tl-org" data-i18n="exp3-org">UX/UI Designer &amp; Social Media</p>
+                    <h3 data-i18n="exp3-title">Freelance · Digital Presence &amp; Product Design</h3>
+                    <div class="tl-tags">
+                        <span><i class='bx bx-pencil'></i> Figma</span>
+                        <span><i class='bx bx-layout'></i> UI Design</span>
+                        <span><i class='bx bx-user-check'></i> UX Research</span>
+                        <span><i class='bx bxl-instagram'></i> Social Media</span>
+                        <span><i class='bx bx-edit-alt'></i> Content Design</span>
+                        <span><i class='bx bx-bar-chart-alt-2'></i> Analytics</span>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li data-i18n="exp3-li1">Designed user interfaces and wireframes in Figma, focusing on usability, visual hierarchy, and consistent design systems.</li>
+                        <li data-i18n="exp3-li2">Conducted basic UX research and user flow mapping to guide layout and navigation decisions before development.</li>
+                        <li data-i18n="exp3-li3">Planned and managed social media content, creating posts and visual identity aligned with each brand.</li>
+                        <li data-i18n="exp3-li4">Analyzed engagement metrics to adjust content strategy and improve audience reach and interaction.</li>
+                        <li data-i18n="exp3-li5">Bridged design and development by translating UI concepts directly into functional, responsive front-end code.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 4: RIGHT (Libreria Editora - 2 roles, same company) -->
+            <div class="tl-item tl-right">
+                <div class="tl-dot"></div>
+                <div class="tl-card">
+                    <span class="tl-badge"><i class='bx bx-palette'></i> <span data-i18n="exp4-badge">Jul 2026 – Currently</span></span>
+                    <p class="tl-org" data-i18n="exp4-org">Marketing &amp; Design</p>
+                    <h3 data-i18n="exp4-title">Libreria Editora</h3>
+                    <div class="tl-tags">
+                        <span><i class='bx bx-bullseye'></i> Marketing</span>
+                        <span><i class='bx bx-palette'></i> Graphic Design</span>
+                        <span><i class='bx bx-image-alt'></i> Visual Content</span>
+                    </div>
+
+                    <div class="tl-roles">
+                        <!-- Role 1 (current) -->
+                        <div class="tl-role">
+                            <span class="tl-role-dot current"></span>
+                            <h4 data-i18n="exp4-r1-title">Marketing Assistant</h4>
+                            <span class="tl-role-date"><i class='bx bx-calendar'></i> <span data-i18n="exp4-r1-date">Jul 15, 2026 – Currently</span></span>
+                            <span class="tl-role-pill"><i class='bx bx-up-arrow-alt'></i> <span data-i18n="exp4-r1-pill">Hired after internship</span></span>
+                            <ul class="tl-bullets">
+                                <li data-i18n="exp4-r1-li1">Support the company's marketing activities as Marketing Assistant.</li>
+                                <li data-i18n="exp4-r1-li2">Responsible for creating all of the company's artwork and visual materials.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Role 2 (previous, same company) -->
+                        <div class="tl-role">
+                            <span class="tl-role-dot"></span>
+                            <h4 data-i18n="exp4-r2-title">Marketing / Design Intern</h4>
+                            <span class="tl-role-date"><i class='bx bx-calendar'></i> <span data-i18n="exp4-r2-date">Jun 22 – Jul 14, 2026</span></span>
+                            <ul class="tl-bullets">
+                                <li data-i18n="exp4-r2-li1">Started in marketing and design, producing visual content for the company.</li>
+                                <li data-i18n="exp4-r2-li2">Hired on Jul 15, 2026, moving into the Marketing Assistant role within the same company.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- === /experience section === -->
+
+    <!-- === service section === -->
+    <section class="services" id="services">
+        <h2><span class="heading-prefix" data-i18n="section-my-svc">My</span> <span data-i18n="section-services">Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3 data-i18n="svc3-title">Full Stack Development</h3>
+                <p class="description" data-i18n="svc3-desc">
+                    I build complete web and mobile applications, from the interface to the database, focused on responsive, efficient, and well-structured solutions. I develop with a mobile-first approach and have experience integrating APIs, modeling databases, and building PWAs.<br><br><strong>My stack:</strong> JavaScript, HTML5, CSS3, PHP, Python, MySQL, React.js, React Native, Apache Cordova / Capacitor, REST APIs, PWA, Git and GitHub.
+                </p>
+                <div><a href="#" class="btn" data-i18n="btn-readmore">Read More</a></div>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-line-chart'></i>
+                <h3 data-i18n="svc1-title">Marketing</h3>
+                <p class="description" data-i18n="svc1-desc">
+                    I work in marketing with a focus on digital presence, creating and planning content for social media and building visual communication that is consistent with each brand. I analyze engagement metrics to adjust content strategy and improve audience reach and interaction.<br><br>Currently I work as a Marketing Assistant at Libreria Editora, where I support the company's marketing activities and create all of its artwork. I am also studying Marketing at UNINOVE, strengthening my knowledge of branding and digital communication.
+                </p>
+                <div><a href="#" class="btn" data-i18n="btn-readmore">Read More</a></div>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-palette'></i>
+                <h3 data-i18n="svc2-title">UI / UX Design</h3>
+                <p class="description" data-i18n="svc2-desc">
+                    I design user-centered interfaces and wireframes in Figma, focusing on usability, visual hierarchy, and consistent design systems. I map user flows and run basic UX research to guide layout and navigation decisions before development.<br><br>I also create visual identities, landing pages, and graphic pieces, taking a project from sketch to final version. Because I also code, I translate UI concepts directly into functional, responsive front-end, bridging the gap between design and development.
+                </p>
+                <div><a href="#" class="btn" data-i18n="btn-readmore">Read More</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- === /service section === -->
+
+    <!-- === portifolio section === -->
+    <section class="portifolio" id="portifolio">
+        <h2><span class="heading-prefix" data-i18n="section-latest">Latest</span> <span data-i18n="section-projects">Projects</span></h2>
+
+        <div class="portifolio-container">
+            <div class="box-portifolio">
+                <img src="images/galeria.png" alt="portifolio">
+                <div class="portifolio-layer">
+                    <h4 data-i18n="proj1-title">Design Gallery</h4>
+                    <p data-i18n="proj1-desc">
+                        A gallery of the design work I've done — UI/UX screens,
+                        visual identities, and landing pages, from sketch to final version.
+                    </p>
+                    <a href="https://stradagustavo.github.io/galeria/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="box-portifolio">
+                <img src="images/Pokédex.jpg" alt="portifolio">
+                <div class="portifolio-layer">
+                    <h4 data-i18n="proj2-title">Pokédex</h4>
+                    <p data-i18n="proj2-desc">
+                        In this project, I use HTML, CSS, and JavaScript to create an interactive
+                        Pokédex. It utilizes the PokéAPI to fetch dynamic Pokémon data. Navigation
+                        between Pokémon is done by ID, simulating a database.
+                    </p>
+                    <a href="https://stradagustavo.github.io/pokedex/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="box-portifolio">
+                <img src="images/interditado.png" alt="portifolio">
+                <div class="portifolio-layer">
+                    <h4 data-i18n="proj3-title">To Do List</h4>
+                    <p data-i18n="proj3-desc">
+                        The To Do List application is a project developed in JavaScript and React,
+                        allowing users to add, edit, mark as complete, and delete
+                        tasks. It uses React's state to manage the tasks interactively.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- === Extra 3 projects (hidden by default)
+            <div class="box-portifolio portifolio-extra" style="display:none;">
+                <img src="images/01.jpg" alt="portifolio">
+                <div class="portifolio-layer">
+                    <h4 data-i18n="proj4-title">Project 4</h4>
+                    <p data-i18n="proj4-desc">Add your project description here. You can replace this image and text with your own project details whenever you're ready.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="box-portifolio portifolio-extra" style="display:none;">
+                <img src="images/Pokédex.jpg" alt="portifolio">
+                <div class="portifolio-layer">
+                    <h4 data-i18n="proj5-title">Project 5</h4>
+                    <p data-i18n="proj5-desc">Add your project description here. You can replace this image and text with your own project details whenever you're ready.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="box-portifolio portifolio-extra" style="display:none;">
+                <img src="images/01.jpg" alt="portifolio">
+                <div class="portifolio-layer">
+                    <h4 data-i18n="proj6-title">Project 6</h4>
+                    <p data-i18n="proj6-desc">Add your project description here. You can replace this image and text with your own project details whenever you're ready.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <!-- === /Extra 3 projects === -->
+        </div>
+
+        <!-- === See More / Ver Mais Button
+        <div class="portifolio-seemore-wrapper">
+            <a href="#" class="btn btn-seemore" id="btn-seemore" data-i18n="btn-seemore">See More</a>
+        </div>
+        <!-- === /See More Button === -->
+    </section>
+    <!-- === /portifolio section === -->
+
+    <footer>
+        <div class="social-midias-footer">
+            <a href="https://www.linkedin.com/in/gustavo-strada-002a3b3a6/" target="_blank" data-tooltip="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/StradaGustavo?tab=overview&from=2025-01-01&to=2025-01-08" target="_blank" data-tooltip="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="cv/gustavo-strada-cv.pdf" download data-tooltip="Download CV" data-i18n-tooltip="tooltip-cv"><i class='bx bx-download'></i></a>
+        </div>
+
+        <div class="nav-footer">
+            <a href="#services"   data-i18n="footer-services">Services</a>
+            <a href="#home"       data-i18n="footer-about">About Me</a>
+            <a href="#experience" data-i18n="footer-experience">Experience</a>
+            <a href="#portifolio" data-i18n="footer-projects">Projects</a>
+        </div>
+
+        <p data-i18n="footer-copy">Copyright &copy; 2026 by &lt;/Gustavo Strada Silva&gt;. All Right Reserved.</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+</html>
